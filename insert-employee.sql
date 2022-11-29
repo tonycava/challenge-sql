@@ -1,7 +1,7 @@
 INSERT into employees
 values (
         9,
-        'Joe',
+        'Doe',
         'John',
         'IT Developer',
         6,
