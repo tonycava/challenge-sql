@@ -1,2 +1,2 @@
 INSERT INTO genres
-VALUES ('Electro')
+VALUES (26,'Electro')
