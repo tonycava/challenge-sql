@@ -1,6 +1,5 @@
-SELECT *
-from invoices
-where BillingCity LIKE 'Bordeaux'
-  or BillingCity LIKE 'Paris'
-  or BillingCity LIKE 'Stuttgart'
-order by Total desc
+SELECT * FROM invoices
+WHERE BillingCity is 'Stuttgart' and BillingCountry is 'Germany'
+or BillingCity is 'Paris'
+or BillingCity is 'Bordeaux'
+ORDER BY Total DESC
