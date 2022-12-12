@@ -1,2 +1,2 @@
 *.xml linguist-detectable=false
-*. linguist-detectable=false
+*.sql linguist-detectable=true
