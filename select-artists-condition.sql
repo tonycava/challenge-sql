@@ -1,4 +1,4 @@
-SELECT *
+SELECT Name
 from artists
          join albums a on artists.ArtistId = a.ArtistId
 GROUP BY artists.Name
