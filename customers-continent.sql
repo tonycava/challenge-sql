@@ -29,7 +29,7 @@ SELECT FirstName,
                 Country == 'Poland' or
                 Country == 'Spain' or
                 Country == 'Sweden' or
-                Country == 'United Kingdom' or
+                Country == 'United Kingdom'
                THEN 'Europe'
            END as 'Continent'
 from customers
