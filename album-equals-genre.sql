@@ -1,6 +1,6 @@
 SELECT *
 from albums
 where Title in (
-    SELECT *
+    SELECT Name
     FROM genres
     )
