@@ -1,5 +1,8 @@
-SELECT t.Name
-from invoices
-         join invoice_items ii on invoices.InvoiceId = ii.InvoiceId
-         join tracks t on t.TrackId = ii.TrackId
-LIMIT 1
+SELECT Name
+from tracks
+         inner join invoice_items ii on tracks.TrackId = ii.TrackId
+where ii.InvoiceLineId = (
+    SELECT max(InvoiceLineId)
+    from invoice_items
+    limit 1
+    )
