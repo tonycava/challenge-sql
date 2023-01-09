@@ -5,10 +5,13 @@ SELECT FirstName,
            WHEN Country == 'Brazil' or
                 Country == 'Canada' or
                 Country == 'USA' or
-                Country == 'Australia' or
                 Country == 'Argentina' or
                 Country == 'Chile'
                 THEN 'America'
+           WHEN
+                Country == 'Australia' THEN 'Oceania'
+           WHEN
+                Country == 'India' THEN 'Asia'
            WHEN Country == 'Germany' or
                 Country == 'Norway' or
                 Country == 'Austria' or
@@ -27,7 +30,6 @@ SELECT FirstName,
                 Country == 'Spain' or
                 Country == 'Sweden' or
                 Country == 'United Kingdom' or
-                Country == 'India'
                THEN 'Europe'
            END as 'Continent'
 from customers
