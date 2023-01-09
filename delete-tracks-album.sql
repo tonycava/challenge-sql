@@ -1,2 +1,2 @@
 DELETE FROM tracks
-WHERE Name = (SELECT Title FROM albums WHERE Title = 'Facelift');
+WHERE AlbumId in (SELECT albums.AlbumId FROM albums WHERE Title = 'Facelift');
